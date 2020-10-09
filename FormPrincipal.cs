@@ -85,7 +85,7 @@ namespace ProReader
         private void listarSalvos_Click(object sender, EventArgs e)
         {
             FormHistorico historico = new FormHistorico();
-
+            historico.Show();
             historico.textBoxUsuario.Text = lblUser.Text;
         }
 

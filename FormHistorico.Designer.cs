@@ -32,32 +32,54 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
+            this.ListarHistorico = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(302, 288);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 109);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(794, 329);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(688, 67);
+            this.textBoxUsuario.Location = new System.Drawing.Point(630, 76);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(100, 20);
             this.textBoxUsuario.TabIndex = 6;
             this.textBoxUsuario.Visible = false;
             // 
+            // ListarHistorico
+            // 
+            this.ListarHistorico.AutoSize = true;
+            this.ListarHistorico.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ListarHistorico.Depth = 0;
+            this.ListarHistorico.Icon = null;
+            this.ListarHistorico.Location = new System.Drawing.Point(407, 67);
+            this.ListarHistorico.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ListarHistorico.Name = "ListarHistorico";
+            this.ListarHistorico.Primary = true;
+            this.ListarHistorico.Size = new System.Drawing.Size(67, 36);
+            this.ListarHistorico.TabIndex = 8;
+            this.ListarHistorico.Text = "Listar";
+            this.ListarHistorico.UseVisualStyleBackColor = true;
+            this.ListarHistorico.Click += new System.EventHandler(this.ListarHistorico_Click);
+            // 
             // FormHistorico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(818, 448);
+            this.Controls.Add(this.ListarHistorico);
             this.Controls.Add(this.textBoxUsuario);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormHistorico";
@@ -75,5 +97,6 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
         public System.Windows.Forms.TextBox textBoxUsuario;
+        public MaterialSkin.Controls.MaterialRaisedButton ListarHistorico;
     }
 }
